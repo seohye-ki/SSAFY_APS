@@ -7,6 +7,7 @@ public class Queue_큐API {
 	public static void main(String[] args) {
 		Queue<Integer> queue = new LinkedList<>();
 		
+		//비슷한 기능이 있지만 차이가 있음
 		//삽입연산 2가지 add와 offer의 차이
 		queue.add(1); //추가될 수 없으면 예외 발생
 		queue.offer(1); //추가될 수 없으면 return false;
