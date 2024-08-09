@@ -2,8 +2,9 @@ package 문제풀이1;
 
 import java.util.Scanner;
 
-//농작물
-public class Solution {
+//농작물 : 중앙지점과 거리 차이가 N / 2이하인 칸이면 더해주기
+//맨해튼 거리 : Math.abs(r1 - r2) + Math.abs(c1 - c2) <= N / 2
+public class Solution2 {
 	public static void main(String[] args) {
 //		Scanner sc = new Scanner(new File("input.txt"));
 		Scanner sc = new Scanner(System.in);
@@ -21,22 +22,11 @@ public class Solution {
 			}
 			
 			int sum = 0;
-			int start = N / 2;
-			int end = N / 2;
 			
-			for(int r = 0; r < N; r++) {
-				for(int c = start; c <= end; c++) {
-					sum += board[r][c];
-				}
-				if(r < N / 2) {
-					 start--;
-					 end++;
-				}
-				else {
-					start++;
-					end--;
-				}
-			}
+			/*
+			 * 채워넣기
+			*/
+			
 			System.out.println("#" + test_case + " " + sum);
 		}
 		sc.close();
