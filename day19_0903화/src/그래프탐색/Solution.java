@@ -1,4 +1,4 @@
-package SW역량테스트;
+package 그래프탐색;
 
 public class Solution {
 
