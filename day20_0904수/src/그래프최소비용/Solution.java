@@ -29,7 +29,7 @@ public class Solution {
 	static int[] p; //대표자 저장 배열
 	
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(input);
+		Scanner sc = new Scanner(System.in);
 		
 		int V = sc.nextInt(); //정점의 개수(정점의 시작번호를 보고)
 		int E = sc.nextInt(); //간선의 개수
